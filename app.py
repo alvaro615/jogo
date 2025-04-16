@@ -80,4 +80,4 @@ def handle_interactions(submit_clicks, next_clicks, selected, idx, answered):
     return idx, "", "feedback", answered
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    app.run_server(debug=True)
