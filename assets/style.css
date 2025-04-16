@@ -1,0 +1,95 @@
+/* Fundo com tema de plantas */
+body {
+    background: url('https://img.freepik.com/fotos-gratis/fundo-de-planta-de-casa-verde-para-amantes-de-plantas_53876-128849.jpg?semt=ais_hybrid&w=740') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+  }
+  
+  .title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .question-container {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  .options {
+    margin-top: 15px;
+  }
+  
+  .btn {
+    background-color: #66bb6a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s, background-color 0.3s;
+    margin-right: 10px;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    background-color: #57a05a;
+  }
+  
+  .feedback {
+    min-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .feedback-correct {
+    color: #2e7d32;
+    animation: success 0.5s ease-out;
+  }
+  
+  .feedback-wrong {
+    color: #c62828;
+    animation: error 0.5s ease-out;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes success {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes error {
+    from { transform: scale(1.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
